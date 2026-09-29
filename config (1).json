@@ -1,0 +1,34 @@
+{
+    "name": "LicensePlateRecognition",
+    "detector": "yolov8",
+    "metric": "l2",
+    "threshold": 0.6,
+    "embedding_dim": 128,
+    "num_classes": 10,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "loss": {
+        "margin": 0.5,
+        "cls_weight": 0.5
+    },
+    "save_dir": "saved/models",
+    "log_dir": "saved/log",
+    "data_loader": {
+        "data_dir": "data",
+        "batch_size": 128,
+        "shuffle": true,
+        "validation_split": 0.1,
+        "num_workers": 4,
+        "img_size": 160,
+        "num_synthetic_classes": 10
+    },
+    "trainer": {
+        "epochs": 250,
+        "early_stop": 80,
+        "log_step": 2,
+        "accelerator": "auto",
+        "devices": 1,
+        "precision": "16-mixed",
+        "val_epoch_interval": 1
+    }
+}

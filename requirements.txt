@@ -1,0 +1,9 @@
+torch
+torchvision
+pytorch-lightning
+tensorboard
+pillow
+numpy
+opencv-python
+matplotlib
+ultralytics

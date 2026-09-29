@@ -1,0 +1,8 @@
+config:
+  embedding_dim: 128
+  learning_rate: 0.001
+  loss:
+    cls_weight: 0.5
+    margin: 0.5
+  num_classes: 1252
+  weight_decay: 0.0005
